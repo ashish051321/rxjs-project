@@ -41,7 +41,9 @@ class MyObserver{
 }
 
 //Once I have my Obsesrver in place, lets instantiate it an pass it to the subscribe method.
-
+//We are wiring the Observable with the Observer here.
 source.subscribe(new MyObserver());
 
 
+//And yes, you can have multiple subscriber toa single observable.
+//Using a class definition is a rather formal way of creating an Observer.
